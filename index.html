@@ -347,6 +347,9 @@
   }
   .cta .form-note{font-size:.78rem;color:var(--sage-100);margin-top:.2rem}
   .cta .form-note a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4)}
+  .cta .refer-line{text-align:center;color:var(--sage-100);font-size:.95rem;margin-top:1.2rem}
+  .cta .refer-line a{color:#fff;font-weight:700;border-bottom:1px solid rgba(255,255,255,.45)}
+  .cta .refer-line a:hover{border-bottom-color:#fff}
   .foot-bottom a{color:#cfd3cc;border-bottom:1px solid rgba(255,255,255,.3);display:inline;margin:0}
 
   /* ---------- Footer ---------- */
@@ -775,6 +778,7 @@
           <p style="display:none"><label>Don't fill this out: <input name="bot-field"></label></p>
           <input type="text" name="name" placeholder="Your name" required aria-label="Your name">
           <input type="tel" name="phone" placeholder="Phone number" required aria-label="Phone number">
+          <input type="email" name="email" placeholder="Email (optional)" autocomplete="email" aria-label="Email address (optional)">
           <input type="text" name="zip" placeholder="ZIP code" inputmode="numeric" aria-label="ZIP code">
           <select name="need" aria-label="Type of care needed">
             <option value="">What kind of help is needed?</option>
@@ -787,6 +791,7 @@
           <p class="form-note">Please don't include medical details here; we'll talk them through by phone. By submitting, you agree to be contacted by Sanvik Home Care about care. We never sell or share your information. <a href="privacy.html">Privacy Policy</a></p>
         </form>
       </div>
+      <p class="refer-line">Know someone who could use our help? <a href="/referral/">Refer them here</a></p>
     </div>
   </div>
 </section>
