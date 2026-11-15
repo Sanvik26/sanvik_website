@@ -489,6 +489,7 @@
         <a href="index.html#areas">Areas we serve</a>
         <a href="index.html#faq">FAQ</a>
         <a href="careers.html">Careers</a>
+        <a href="/referral/">Refer someone</a>
       </div>
       <div>
         <h4>Get in touch</h4>
@@ -556,10 +557,12 @@
       body: encode(data)
     })
     .then(() => {
-      if (typeof gtag === 'function') gtag('event', 'generate_lead', { form_type: type === 'care' ? 'care_consultation' : 'caregiver_application' });
+      if (typeof gtag === 'function') gtag('event', 'generate_lead', { form_type: type === 'care' ? 'care_consultation' : (type === 'referral' ? 'client_referral' : 'caregiver_application') });
       const msg = type === 'care'
         ? "Thank you — we've received your request and will call you back, usually within one business day."
-        : "Thanks for your interest in joining us! We'll reach out within 1–2 business days.";
+        : (type === 'referral'
+          ? "Thank you for the referral. We'll reach out to them within one business day."
+          : "Thanks for your interest in joining us! We'll reach out within 1–2 business days.");
       form.innerHTML = '<div style="text-align:center;padding:1rem 0">' +
         '<div style="font-size:2rem;line-height:1;margin-bottom:.6rem">✅</div>' +
         '<p style="color:#fff;font-weight:700;font-size:1.05rem;margin-bottom:.3rem">Message received</p>' +
