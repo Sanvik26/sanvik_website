@@ -11,4 +11,4 @@ Static website for Sanvik Home Care (Sanvik LLC), Berkeley Heights, NJ. Hosted o
 
 No build step: Netlify publishes the files in this folder as they are. Forms are handled by Netlify Forms.
 
-Before going live, replace `G-XXXXXXXXXX` in `index.html`, `careers.html` and `privacy.html` with the Google Analytics Measurement ID.
+Google Analytics 4 Measurement ID `G-LKDNVKXWEF` is set on every page (added Nov 15, 2026). To change it, replace it in `index.html`, `careers.html`, `privacy.html` and `referral/index.html`.
